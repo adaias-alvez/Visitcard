@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'poppings', sans-serif;
+	}
+	body{
+		overflow: hidden;
+	}
+	section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: #ecf0f3;
+	}
+	.card{
+		position: relative;
+		width: 508px;
+		height: 314px;
+		transform-style: preserve-3d;
+		perspective: 500px;
+	}
+	.card .face.f2{
+		transform: rotateY(180deg);
+	}
+	.card:hover .face.f2{
+		transform: rotateY(360deg);
+        transition-delay: 0.5s;
+	}
+	.card:hover .face.f1{
+		transform: rotateY(180deg);
+        transition-delay: 0.5s;
+	}
+    img{
+        width: 380px;
+        transform: translate(20%, 1%);
+    }
+    p{
+        font-family: 'Shippori Mincho', sans-serif;
+        font-weight: 600;
+        transform: translate(32%, -120%);
+    }
+    .card hr{
+			opacity: 0;
+			width: 1%;
+			transition: 1s;
+            transition-delay: 0s;
+			transform: scale(0);
+		}
+		.card:hover hr{
+			opacity: 0.7;
+			width: 85%;
+			transform: scale(1);
+            transition-delay: 1s;
+		}
+	.card .face{
+		position: absolute;
+		top: 0;
+		right: 3px;
+		width: 105%;
+		height: 95%;
+        box-shadow: 10px 9px 12px #ffffffea,
+			           -10px -9px 12px #e4e4e4c9;
+		border-radius: 15px;
+		background: linear-gradient(150deg, #fff, #ecf0f3);
+ 		transform-style: preserve-3d;
+		transition: 1s;
+		backface-visibility: hidden;
+	}
+    .fa{
+			font-weight: 600;
+		}
+        .card ul{
+			list-style: none;
+			display: block;
+			transform: translate(122%, -95%);
+			width: 45%;
+		}
+        li{
+            font-size: 16px;
+            transition:0.5s;
+        }
+        li:hover{
+            font-size: 18px;
+        }
+        a{
+			text-decoration: none;
+			color: #000;
+            line-height: 57px;
+			letter-spacing: 5px;
+			font-family: consola, sans-serif;
+			font-weight: 600;
+			font-family: 'Shippori Mincho', sans-serif;
+		}
+        .card .t{
+			width: 2px;
+			height: 70%;
+			background:  #093c43;
+			margin: 0 auto;
+			transform: translate(-10px, 22%);
+			transition: 1s;
+			margin-bottom: -222px;
+		}
+        .logo{
+            width: 350px;
+            transform: translate(-12%, 15%);
+        }
+		ul{
+             position: relative;
+             display: flex;
+         }
+         ul li{
+             position: relative;
+             list-style: none;
+             margin: 10px;
+         }
